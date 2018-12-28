@@ -1,0 +1,13 @@
+Starters:
+
+- cache
+- tests
+- jpa
+- data-rest
+- logging
+- json
+- cloud foundry
+
+Other:
+
+- https://github.com/codecentric/spring-boot-admin
