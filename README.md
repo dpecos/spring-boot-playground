@@ -42,6 +42,18 @@ These endpoints can be secured with `spring-boot-starter-security`.
 
 Note: this password is generated on every app startup.
 
+### git details
+
+`info` actuator's endpoint will expose information about git repository if a `git.properties` file is found in the root 
+of the classpath. That file can be generated with the `git-commit-id-plugin` plugin:
+
+`http :8080/actuator/info --auth user:022e0a5e-0c15-43ad-af16-449429f04ad1` 
+
+In order to show full git details, the following property must be set:
+
+`management.info.git.mode=full`
+
+
 ## spring-boot-starter-security
 
 Links:
