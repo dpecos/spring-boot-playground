@@ -18,3 +18,14 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-devtoo
 https://www.baeldung.com/spring-boot-starters (Section 2)
 
 - Adds support for HTTP / REST controllers
+
+
+## spring-boot-actuator
+
+- https://www.baeldung.com/spring-boot-actuators
+- https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints
+
+- Actuator endpoints have to be enabled and exposed to be able to interact with them.
+- Shutdown endpoint has to be explicitly enabled: `management.endpoint.shutdown.enabled=true`
+
+
