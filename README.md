@@ -75,3 +75,13 @@ Links:
 Features:
 - `spring-boot-starter-test` provides `@SpringBootTest` to setup web tests
 - RestAssured is the library chosen to express web tests (it's important to setup the port the application has picked up)
+
+## ProjectLombok
+
+Links:
+- https://projectlombok.org/
+
+Features:
+- Provides annotations that generate a lot of boiler-plate code:
+  - `@Log`
+  - `@Data` == `@ToString`, `@EqualsAndHashCode`, `@Getter` on all fields, and `@Setter` on all non-final fields, and `@RequiredArgsConstructor`
