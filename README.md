@@ -38,16 +38,16 @@ Features:
 
 These endpoints can be secured with `spring-boot-starter-security`.
 
-`http :8080/actuator/health --auth user:835bcba8-8722-47cb-bc63-58da1c861213`
+`http :8080/actuator/health --auth user:password`
 
-Note: this password is generated on every app startup.
+Note: these credentials are setup by `spring-boot-starter-security`
 
 ### git details
 
 `info` actuator's endpoint will expose information about git repository if a `git.properties` file is found in the root 
 of the classpath. That file can be generated with the `git-commit-id-plugin` plugin:
 
-`http :8080/actuator/info --auth user:022e0a5e-0c15-43ad-af16-449429f04ad1` 
+`http :8080/actuator/info --auth user:password` 
 
 In order to show full git details, the following property must be set:
 
@@ -66,3 +66,12 @@ Features:
 - Oauth2
 - Adds actuator security
 
+## spring-boot-starter-test
+
+Links: 
+- https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html
+- https://www.baeldung.com/rest-assured-tutorial
+
+Features:
+- `spring-boot-starter-test` provides `@SpringBootTest` to setup web tests
+- RestAssured is the library chosen to express web tests (it's important to setup the port the application has picked up)
